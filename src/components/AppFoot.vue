@@ -5,22 +5,24 @@
     <div class="container">
 
         <div class="left">
-            <ul>
-                <li><h3>DC COMIC</h3></li>
-                <li>Characters</li>
-                <li>Comics</li>
-                <li>Movies</li>
-                <li>TV</li>
-                <li>Games</li>
-                <li>Videos</li>
-                <li>News</li>
-            </ul>
-
-            <ul>
-                <li><h3>SHOP</h3></li>
-                <li>Shop DC</li>
-                <li>Shop DC Collectibles</li>
-            </ul>
+            <div>
+                <ul>
+                    <li><h3>DC COMIC</h3></li>
+                    <li>Characters</li>
+                    <li>Comics</li>
+                    <li>Movies</li>
+                    <li>TV</li>
+                    <li>Games</li>
+                    <li>Videos</li>
+                    <li>News</li>
+                </ul>
+    
+                <ul>
+                    <li><h3>SHOP</h3></li>
+                    <li>Shop DC</li>
+                    <li>Shop DC Collectibles</li>
+                </ul>
+            </div>
 
             <ul>
                 <li><h3>DC</h3></li>
@@ -48,7 +50,7 @@
         </div>
 
         <div class="right">
-
+            <img src="../assets/img/dc-logo-bg.png" alt="">
         </div>
 
     </div>
@@ -56,8 +58,35 @@
 </template>
 
 <style scoped lang="scss">
+@use './../assets/style/variables.scss' as *;
 .container{
-    background-image: ("src\assets\img\footer-bg.jpg");
+    @include flex-space-around;
+    background-image: url("../assets/img/footer-bg.jpg");
     height: 500px;
+    color: white;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+
+    ul{
+        margin: 30px;
+        li{
+            list-style: none;
+            color: rgb(133, 133, 133);
+            margin: 6px 0;
+
+            h3{
+                font-size: 25px;
+                color: white;
+            }
+        }
+    }
+
+    img{
+        position: relative;
+        overflow-y: hidden;
+    }
 }
 </style>

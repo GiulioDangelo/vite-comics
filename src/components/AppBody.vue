@@ -17,9 +17,11 @@
 </template>
 
 <style scoped lang="scss">
+@use './../assets/style/variables.scss' as *;
 .container{
-    background-color: black;
+    background-color: $main-color;
     height: 200px;
     color: white;
+    background-color: black;
 }
 </style>
