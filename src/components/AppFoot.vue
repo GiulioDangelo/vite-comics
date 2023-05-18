@@ -1,4 +1,10 @@
-<script></script>
+<script>
+import AppSocial from "./AppSocial.vue";
+
+export default {
+    components: {AppSocial},
+};
+</script>
 
 <template>
 
@@ -54,7 +60,7 @@
         </div>
 
     </div>
-
+    <AppSocial/>
 </template>
 
 <style scoped lang="scss">
@@ -62,7 +68,7 @@
 .container{
     @include flex-space-around;
     background-image: url("../assets/img/footer-bg.jpg");
-    height: 500px;
+    height: 450px;
     color: white;
 }
 
@@ -80,13 +86,19 @@
             h3{
                 font-size: 25px;
                 color: white;
+                font-weight: 700;
             }
         }
     }
+}
 
+.right{ 
+    overflow: hidden;
+    height: 100%;
     img{
+        height: 700px;
         position: relative;
-        overflow-y: hidden;
+        bottom: 115px;
     }
 }
 </style>

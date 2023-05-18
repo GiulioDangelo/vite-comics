@@ -26,6 +26,7 @@ ul{
     @include flex-space-around;
     height: 100%;
     list-style: none;
+    margin-inline: 100px;
 
     li{
         display: flex;

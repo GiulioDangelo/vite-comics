@@ -30,19 +30,28 @@
 
 .nav {
     @include flex-space-around;
+    height: 120px;
 }
 
-
 .right {
+    height: 100%;
     ul {
         height: 100%;
-        li {
-            margin-right: 30px;
-            height: 100%
-        }
-
         @include flex-space-around;
         list-style: none;
+        li {
+            margin-right: 30px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+
+            &:hover{
+                border-bottom: 8px solid $main-color;
+                color:$main-color ;
+            }
+        }
+
     }
 }
 </style>
