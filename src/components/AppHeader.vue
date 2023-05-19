@@ -31,6 +31,8 @@
 .nav {
     @include flex-space-around;
     height: 120px;
+    max-width: 1500px;
+    margin: auto;
 }
 
 .right {

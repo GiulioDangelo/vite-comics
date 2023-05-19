@@ -85,11 +85,8 @@
         }
     }
 };
-
-
-
-
 </script>
+
 
 <template>
 
@@ -116,10 +113,11 @@
 
 </template>
 
+
 <style scoped lang="scss">
 @use './../assets/style/variables.scss' as *;
 .img-container{
-    height: 300px;
+    height: 400px;
     overflow: hidden;
 
     img{
@@ -134,10 +132,11 @@
 }
 
 .content{
-    max-width: 1500px;
     @include flex-space-around;
-    margin: auto;
     flex-wrap: wrap;
+    margin: auto;
+    max-width: 1500px;
+    margin: auto;
 }
 
 button{

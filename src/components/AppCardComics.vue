@@ -10,7 +10,7 @@ export default{
 <template>
     <div class="card">
         <div class="img-container"><img :src="comicSrc" alt=""></div>
-        <h4>{{ title }}</h4>
+        <span>{{ title }}</span>
     </div>
 </template>
 
@@ -18,7 +18,7 @@ export default{
 <style lang="scss" scoped>
 @use './../assets/style/variables.scss' as *;
 img{
-    height: 200px;
+    height: 250px;
 }
 
 .card{
