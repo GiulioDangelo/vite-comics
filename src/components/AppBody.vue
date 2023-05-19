@@ -107,6 +107,8 @@
             :comicSrc="comic.thumb"
             :title="comic.series"
             />
+
+            <button>LOAD MORE</button>
         </div>
     </div>
         
@@ -127,7 +129,8 @@
 
 .container{
     color: white;
-    background-color: black;
+    background-color: rgb(28, 28, 28);
+    padding: 30px 0;
 }
 
 .content{
@@ -135,5 +138,15 @@
     @include flex-space-around;
     margin: auto;
     flex-wrap: wrap;
+}
+
+button{
+    background-color: $main-color;
+    color: white;
+    margin-top: 30px;
+    padding: 10px 25px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
 }
 </style>

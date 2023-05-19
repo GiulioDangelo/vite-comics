@@ -23,5 +23,6 @@ img{
 
 .card{
     width: calc( 100% / 6 );
+    text-align: center;
 }
 </style>
