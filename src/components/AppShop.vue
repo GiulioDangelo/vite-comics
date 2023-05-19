@@ -38,6 +38,11 @@ ul{
             margin-left: 20px;
             color: white;
             font-size: 20px;
+
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
         }
 
         img{

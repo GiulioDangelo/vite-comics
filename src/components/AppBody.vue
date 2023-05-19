@@ -97,15 +97,17 @@
     </div>
 
     <div class="container">
+        <button class="btn-top">CURRENT SERIES</button>
         <div class="content">
             <AppCardComics 
             v-for="comic in arrComics"
             :key="comic"
             :comicSrc="comic.thumb"
             :title="comic.series"
+            :price="comic.price"
             />
 
-            <button>LOAD MORE</button>
+            <button class="btn-bottom">LOAD MORE</button>
         </div>
     </div>
         
@@ -117,7 +119,7 @@
 <style scoped lang="scss">
 @use './../assets/style/variables.scss' as *;
 .img-container{
-    height: 400px;
+    height: 500px;
     overflow: hidden;
 
     img{
@@ -139,13 +141,19 @@
     margin: auto;
 }
 
-button{
+.btn-top{
+    position: absolute;
+    left: 520px;
+    top: 570px;
+}
+
+.btn-bottom,.btn-top{
     background-color: $main-color;
     color: white;
     margin-top: 30px;
     padding: 10px 25px;
     border: none;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
 }
 </style>

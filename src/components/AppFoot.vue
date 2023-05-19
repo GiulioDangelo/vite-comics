@@ -83,6 +83,11 @@ export default {
             color: rgb(133, 133, 133);
             margin: 6px 0;
 
+            &:hover{
+                color: white;
+                text-decoration: underline;
+            }
+
             h3{
                 font-size: 25px;
                 color: white;

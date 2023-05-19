@@ -39,6 +39,11 @@ button{
     background-color: rgb(48, 48, 48);
     color: white;
     font-weight: 600;
+
+    &:hover{
+        cursor: pointer;
+        color: lightgrey
+    }
 }
 
 .right{
@@ -51,6 +56,11 @@ button{
     }
         img{
             margin-inline:10px;
+
+            &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+    }
         }
 }
 </style>
