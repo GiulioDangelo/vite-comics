@@ -8,7 +8,7 @@
             <li><img src="../assets/img/buy-comics-merchandise.png"> <span>DC MERCHANDISE</span></li>
             <li><img src="../assets/img/buy-comics-shop-locator.png"> <span>SUBSCRIPTION</span></li>
             <li><img src="../assets/img/buy-comics-subscriptions.png"> <span>COMIC SHOP LOCATOR</span></li>
-            <li><img src="../assets/img/buy-dc-power-visa.svg"> <span>DC POWER VISA</span></li>
+            <li><img src="../assets/img/buy-dc-power-visa.svg" class="visa"> <span>DC POWER VISA</span></li>
         </ul>
     </div>
 
@@ -30,7 +30,9 @@ ul{
 
     li{
         display: flex;
+        justify-content: center;
         align-items: center;
+        
 
         span{
             margin-left: 20px;
@@ -40,6 +42,10 @@ ul{
 
         img{
             height: 70px;
+        }
+
+        .visa{
+            width: 80px;
         }
     }
 }
