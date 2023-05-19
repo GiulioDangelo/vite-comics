@@ -83,15 +83,20 @@ export default {
             color: rgb(133, 133, 133);
             margin: 6px 0;
 
-            &:hover{
+            &:hover:not(:nth-child(1)){
                 color: white;
                 text-decoration: underline;
+                cursor: pointer;
             }
 
             h3{
                 font-size: 25px;
                 color: white;
                 font-weight: 700;
+
+                &:hover{
+                cursor: default;
+                }
             }
         }
     }
